@@ -10,7 +10,7 @@ $(function() {
       return alert( "Sorry, your browser doesn't support pjax :(" )
     }
 
-    if ( $(this).attr('checked') )
+    if ($(this).prop('checked') )
       $.cookie('pjax', true)
     else
       $.cookie('pjax', null)
